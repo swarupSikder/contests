@@ -25,22 +25,18 @@ void reverse(char* str) {
 }
 
 bool palindrome(char s[]){
-    char t[1000];
+    char t[200001];
 
     //copy to t[]
     strcpy(t, s);
 
     //reverse s[]
-    reverse(s);
+    reverse(t);
 
     if(strcmp(s, t)==0){
-        //reverse again s[]
-        reverse(s);
         return true;
     }
     else{
-        //reverse again s[]
-        reverse(s);
         return false;
     }
 }
