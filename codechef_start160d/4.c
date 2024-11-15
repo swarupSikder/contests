@@ -30,8 +30,8 @@ int main(){
     //-------------------//
     //     test case     //
     //-------------------//
-    int t=1;
-    //scanf("%d", &t);
+    int t;
+    scanf("%d", &t);
 
     while(t--){
         body();

@@ -10,28 +10,33 @@ void body(){
     //---------------//
     //     input     //
     //---------------//
-    int n;
-    scanf("%d", &n);
+    int n, k;
+    scanf("%d %d", &n, &k);
 
 
     //-----------------//
     //     process     //
     //-----------------//
-
-
+    int slices_10 = n*10;
+    int slices_12 = n*12;
 
 
     //----------------//
     //     output     //
     //----------------//
-    printf("%d\n", n);
+    if(slices_10<=k && k<=slices_12){
+        printf("YES\n");
+    }
+    else{
+        printf("NO\n");
+    }
 }
 int main(){
     //-------------------//
     //     test case     //
     //-------------------//
-    int t=1;
-    //scanf("%d", &t);
+    int t;
+    scanf("%d", &t);
 
     while(t--){
         body();

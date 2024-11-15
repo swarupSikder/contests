@@ -1,2 +1,3 @@
+if(strcmp(s,t)!=0){
 
-    //     process     //
+                // }

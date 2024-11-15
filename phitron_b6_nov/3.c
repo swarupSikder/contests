@@ -1,6 +1,6 @@
 //auther:   Swarup Sikder
-//judge:    codeChef
-//contest:  start 160d
+//judge:    hackerRank
+//contest:  phitron_b6_nov
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
@@ -10,30 +10,19 @@ void body(){
     //---------------//
     //     input     //
     //---------------//
-    int x,y,z;
-    scanf("%d %d %d", &x, &y, &z);
-
+    int n;
+    scanf("%d", &n);
 
     //-----------------//
     //     process     //
     //-----------------//
-    int price;
-    int generalPrice = x+y;
-
-    if(z<generalPrice){
-        price = 2*z + y;
-    }
-    else{
-        price = 2*x + 3*y;
-    }
-
 
 
 
     //----------------//
     //     output     //
     //----------------//
-    printf("%d\n", price);
+    printf("%d\n", n);
 }
 int main(){
     //-------------------//
