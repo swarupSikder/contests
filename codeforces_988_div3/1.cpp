@@ -1,41 +1,45 @@
 //auther:   Swarup Sikder
-//judge:    hackerRank
-//contest:  phitron_b6_nov
-#include <stdio.h>
-#include <stdlib.h>
-#include <stdbool.h>
-#include <string.h>
-#include <math.h>
+//judge:    codeForces
+//contest:  988 div 3
+#include <bits/stdc++.h>
+using namespace std;
+
 void body(){
     //---------------//
     //     input     //
     //---------------//
     int n;
-    scanf("%d", &n);
+    cin>>n;
+
+    int a[n];
+    int fre[21]= {0};
+
+    for(int i=0; i<n ;i++){
+        cin>>a[i];
+        fre[a[i]]++;
+    }
+
 
     //-----------------//
     //     process     //
     //-----------------//
-    int sum=0;
-    for(int i=1; i<=n ;i++){
-        if(i%2==0){
-            sum += i;
-        }
+    int score=0;
+    for(int i=1; i<=20 ;i++){
+        score += fre[i]/2;
     }
-
-
+    
 
     //----------------//
     //     output     //
     //----------------//
-    printf("%d\n", sum);
+    cout<< score <<endl;
 }
 int main(){
     //-------------------//
     //     test case     //
     //-------------------//
-    int t=1;
-    //scanf("%d", &t);
+    int t;
+    cin>>t;
 
     while(t--){
         body();
