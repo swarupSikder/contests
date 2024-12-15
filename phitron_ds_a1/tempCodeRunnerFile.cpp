@@ -1,0 +1,3 @@
+if(countDuplicate>1){
+
+        // }

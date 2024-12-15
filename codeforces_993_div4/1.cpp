@@ -4,11 +4,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main(){
+void body(){
     int n;
     cin>> n;
-    
-    cout<< n*12 <<endl;
+
+    cout<< n-1 <<endl;
+}
+
+int main(){
+    int t;
+    cin>> t;
+    while(t--){
+        body();
+    }
     
     return 0;
 }
